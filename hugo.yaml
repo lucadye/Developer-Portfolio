@@ -3,3 +3,7 @@ port: 1313
 languageCode: 'en-us'
 title: 'Luca Dye'
 theme: 'hugo-profile'
+
+params:
+  css:
+    - "css/main.css"

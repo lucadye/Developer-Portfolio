@@ -1,0 +1,57 @@
+/* Typographical Alterations */
+
+/* Hero */
+.primary-font, #primary-font {
+    font-family: "Nunito", sans-serif !important;
+}
+#hero h2 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: 1000;
+    text-shadow: 4px 4px 0px var(--secondary-color);
+}
+#hero h3, #hero .subtitle, #hero .hero-content {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: 800;
+}
+
+/* Default font for body */
+body * {
+    font-family: "El Messiri", serif !important;
+}
+body h1, body h2, body h3,
+body h4, body h5, body h6 {
+    font-family: "Berkshire Swash", "El Messiri", serif !important;
+}
+
+/* secondary font */
+.secondary-font, #secondary-font {
+    font-family: "Times New Roman", serif;
+}
+
+/* Default font */
+.default-font, #default-font {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Skill Column Fix */
+
+#about ul {
+    grid-template-columns: repeat(2, minmax(140px, 200px)) !important;
+}
+
+@media screen and (min-width: 575px) {
+    #about ul {
+        grid-template-columns: repeat(3, minmax(140px, 200px)) !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #about ul {
+        grid-template-columns: repeat(4, minmax(140px, 200px)) !important;
+    }
+}
+
+#about ul li::before {
+    content: "~" !important;
+}
