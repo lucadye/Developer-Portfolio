@@ -1,9 +1,10 @@
-baseURL: 'http://192.168.68.85'
+baseURL: 'https://lucadye.github.io/Developer-Portfolio'
 port: 1313
 languageCode: 'en-us'
 title: 'Luca Dye'
 theme: 'hugo-profile'
 
 params:
+  staticPath: './'
   css:
     - "css/main.css"
