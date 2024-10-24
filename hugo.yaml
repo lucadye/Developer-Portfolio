@@ -6,8 +6,7 @@ theme: 'hugo-profile'
 
 params:
   staticPath: './'
-  css:
-    - "css/main.css"
+  customCSS: true
   color:
     backgroundColor: "#C0DEF1"
     secondaryColor: "#80BCE3"
@@ -20,6 +19,9 @@ params:
       secondaryTextColor: "#0079C6"
       primaryColor: "#80BCE3"
       textColor: "#C0DEF1"
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "dark"
   hero:
     enable: true
     intro: "Greetings, traveller! My name's"
