@@ -27,7 +27,7 @@ params:
     intro: "Greetings, traveller! My name's"
     title: 'Luca Dye'
     subtitle: "I'm a full-stack web developer."
-    content: "I'm a passionate web app developer. I make use of modern web technologies to build performant websites that looks great, feels fantastic, and functions correctly."
+    content: "I'm a passionate web developer. I make use of modern technologies to build performant websites that look great, feel fantastic, and function correctly."
     image: /images/me.jpeg
     button:
       enable: true
