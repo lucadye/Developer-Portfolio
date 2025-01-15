@@ -1,0 +1,40 @@
+#pokemon {
+    min-height: 451px;
+}
+
+#pokemon > div {
+    max-width: 475px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: var(--text-color);
+}
+
+#pokemon > img {
+    width: 475px;
+    height: auto;
+}
+
+#pokemon > img.pixel {
+    image-rendering: pixelated;
+}
+
+#pokemon .btn:focus {
+    box-shadow: none !important;
+}
+
+#pokemon .btn:hover {
+    opacity: .7;
+}
+
+#pokemon .btn {
+    transition: opacity 0.3s;
+    border-radius: .5rem !important;
+    border-color: var(--primary-color) !important;
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+}
+
+#credits-404-page a {
+    text-decoration: none !important;
+    color: var(--text-link-color) !important;
+}

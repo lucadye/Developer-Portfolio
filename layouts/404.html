@@ -1,0 +1,42 @@
+{{ define "head" }}
+<meta name="description" content={{ .Site.Params.description }}>
+<script defer src="{{ .Site.Params.staticPath }}/pokemon.js"></script>
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/pokemon.css" media="all">
+{{ end }}
+
+{{ define "title" }}
+{{ .Site.Title }} | {{ .Site.Params.terms.pageNotFound | default "404 page not found" }}
+{{ end }}
+
+{{ define "main" }}
+<div class="container py-5 text-center">
+    <h1>{{ .Site.Params.terms.pageNotFound | default "404 page not found" }}</h1>
+</div>
+<div id="pokemon" class="container row mx-auto justify-content-center align-items-center">
+    <img id="pokemon-img"/>
+    <div class="container" style="margin: 0;">
+        <h2 id="pokemon-name">Loading...</h2>
+        <p id="pokemon-desc">If you're reading this, you're either very quick, or in the source code. <3</p>
+        <ul>
+            <li>Weight: <span id="pokemon-weight">0.0</span>kg</li>
+            <li>Height: <span id="pokemon-height">0.0</span>m</li>
+            <li>Type(s): <span id="pokemon-types">???</span></li>
+        </ul>
+        <a class="btn"
+            id="pokemon-url"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            >View Pokedex Entry
+        </a>
+    </div>
+    <div></div>
+</div>
+<div class="container py-5 text-center">
+    Thanks to<br>
+    <span id="credits-404-page" class="text-secondary">
+        <a href="https://www.pokeapi.co">pokeapi.co</a> for the pokémon data
+        <br>
+        <a href="https://www.random.org">random.org</a> for the randomness
+    </span>
+</div>
+{{ end }}
