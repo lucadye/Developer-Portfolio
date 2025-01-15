@@ -1,4 +1,4 @@
-baseURL: 'https://lucadye.github.io/Developer-Portfolio'
+baseURL: 'lucadye.com'
 port: 1313
 languageCode: 'en-us'
 title: 'Luca Dye'
@@ -146,5 +146,5 @@ params:
   contact:
     enable: true
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    email: hello@lucadye.com
+    email: lucadye@gmail.com
     btnName: Send me an Email!
