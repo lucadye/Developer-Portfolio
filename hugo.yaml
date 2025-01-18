@@ -5,7 +5,6 @@ title: 'Luca Dye'
 theme: 'hugo-profile'
 
 params:
-  staticPath: './'
   customCSS: true
   color:
     backgroundColor: "#C0DEF1"
