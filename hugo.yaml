@@ -98,6 +98,20 @@ params:
   projects:
     enable: true
     items:
+      - title: QuickR
+        content: A simple QR code generator.
+        image: /images/projects/quickr.jpeg
+        featured:
+          name: Try it!
+          link: https://quickr-qr.netlify.app/
+        badges:
+          - "Front-End"
+          - "React"
+          - "Rust"
+          - "WebAssembly"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/lucadye/quickr
       - title: CraftShoppe
         content: A demo e-commerce platform using a custom back-end called EasyBuy.
         image: /images/projects/CraftShoppe.jpeg
