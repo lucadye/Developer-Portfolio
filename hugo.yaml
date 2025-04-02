@@ -47,7 +47,7 @@ params:
 
     skills:
       enable: true
-      title: "Here are a few technologies I've been working with recently:"
+      title: "Here are a few technologies I've worked with:"
       items:
         - "[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)"
         - "[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)"
@@ -59,14 +59,24 @@ params:
         - "[Redux](https://redux.js.org)"
         - "[C#](https://learn.microsoft.com/en-us/dotnet/csharp)"
         - "[ASP.NET](https://dotnet.microsoft.com/en-us/apps/aspnet)"
+        - "[Rust](https://rust-lang.org)"
+        - "[WebAssembly](https://webassembly.org)"
         - "[Python](https://python.org)"
+        - "[Flask](https://flask.palletsprojects.com)"
+        - "[Java](https://java.com)"
+        - "[Kotlin](https://kotlinlang.org)"
+        - "[PhP](https://php.net)"
         - "[MongoDB](https://mongodb.com)"
         - "[PostgreSQL](https://postgresql.org)"
         - "[SQLite](https://sqlite.org)"
-        - "[GitHub](https://github.com)"
+        - "[Dart](https://dart.dev)"
+        - "[Flutter](https://flutter.dev)"
         - "[Git](https://git-scm.com)"
+        - "[GitHub](https://github.com)"
         - "[Render](https://render.com)"
         - "[Netlify](https://netlify.com)"
+        - "[GitHub Pages](https://pages.github.com)"
+        - "[Stripe](https://stripe.com)"
   education:
     enable: true
     # index: true
@@ -75,26 +85,39 @@ params:
         school:
           name: "Codecademy"
           url: "https://codecademy.com"
-        # date: "2023 - 2024"
         GPA: "4.9 out of 5.0"
         content: |-          
-          The curriculum contained the following:
+          Through this course, I learned the following skils:
             - Web Development Foundations
+              - HTML & CSS
+              - HTTP/HTTPS
             - Building Interactive Websites
+              - JavaScript
+              - Git & GitHub
             - Front-End Development
+              - React
+              - Redux
             - Back-End Development
+              - Node.js
+              - Express.js
             - Full-Stack Development
       - title: "Additional Certification"
         school:
           name: "Codecademy"
           url: "https://codecademy.com"
-        # date: "2023 - 2024"
         content: |-          
-          Additional courses I've taken include:
-            - Typescript
-            - MongoDB
-            - C#
-            - ASP.NET
+          Additional skills I'm certified in include:
+          - JavaScript
+          - TypeScript
+          - Python 3
+          - Flask
+          - Java
+          - Kotlin
+          - ASP.NET
+          - PHP
+          - MongoDB
+          - Linux
+          - Bash Scripting
   projects:
     enable: true
     items:
