@@ -118,3 +118,10 @@ function main()
 }
 
 main();
+
+const rerollButton = document.getElementById('reroll-button')
+
+rerollButton.addEventListener('onClick', e => {
+  e.preventDefault();
+  main();
+})

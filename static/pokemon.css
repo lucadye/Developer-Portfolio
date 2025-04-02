@@ -32,6 +32,7 @@
     border-color: var(--primary-color) !important;
     background-color: var(--secondary-color) !important;
     color: var(--text-color) !important;
+    margin-right: 0.25rem;
 }
 
 #credits-404-page a {
