@@ -82,8 +82,3 @@
 </style>
 
 {{ partial "head/extensions.html" . }}
-
-<!-- Custom Styles -->
-{{ range .Site.Params.css -}}
-    <link rel="stylesheet" href="{{ . | absURL }}">
-{{- end }}

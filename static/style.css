@@ -55,3 +55,8 @@ body h4, body h5, body h6 {
 #about ul li::before {
     content: "~" !important;
 }
+
+pre code[data-lang] * {
+    font-family: monospace !important;
+    line-height: 125% !important;
+}
