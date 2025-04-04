@@ -48,7 +48,6 @@ async function getPokemon(id)
       .sort((a, b) => a.slot - b.slot)
       .map(({type}) => fetchJSON(type.url))
   ];
-  console.log(pokemonData.sprites)
   for (let t = 0; t < types.length; ++t) types[t] = await types[t];
   return {
     name: pokemonText.names.filter(filterToEnglish)[0].name,
@@ -82,17 +81,26 @@ async function populatePage(pokemon)
       switch (name)
       {
         case 'url':
-          element.href = value;
+          if (!value) {
+            element.disabled = true;
+            delete element.removeAttribute('href');
+          }
+          else {
+            element.disabled = false;
+            element.href = value;
+          }
           break;
         case 'img':
           element.src = value;
+          break;
+        case 'sprites':
           break;
         default:
           element.innerText = value;
           break;
       }
     } catch (e) {
-      console.log(`Error while iterating pokemon ${pokemon.name}'s ${name} value ('${value}'): ${e.message}`);
+      console.error(`Error while iterating pokemon ${pokemon.name}'s ${name} value ('${value}'): ${e.message}`);
     }
   }
   let clicks = 0;
@@ -121,7 +129,18 @@ main();
 
 const rerollButton = document.getElementById('reroll-button')
 
-rerollButton.addEventListener('onClick', e => {
+rerollButton.addEventListener('click', e => {
   e.preventDefault();
+  e.stopPropagation();
+  populatePage({
+    name: 'Loading...',
+    desc: 'If you\'re reading this, you\'re either very quick, or in the source code. :3',
+    img: '',
+    sprites: ['', ''],
+    weight: '0.0',
+    height: '0.0',
+    types: '???',
+    url: '',
+  });
   main();
 })
